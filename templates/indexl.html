@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template is working</title>
+    <!-- external css : <link rel="stylesheet" href="index.css">-->
+    <!--Internal css-->
+    <!--<style>
+        body{
+            background-color: linen;
+
+        }
+        textarea{
+            background-color: yellow;
+
+        }
+        button{
+            padding: 5px 15px;
+            font-size: 24;
+            text-align: center;
+            background-color: #4CAF50;
+            border-radius: 15px;
+            
+        }
+    </style>-->
+    <!--External css
+    <link rel="stylesheet" href="mystyle.css">-->
+
+</head>
+<body>
+<h1> Welcome to the text analyzer. Enter your text below.</h1>
+<form action='/analyze' method='get'>
+    <textarea name='text' style='width: 720px; height: 72px;'></textarea><br>
+
+    <input type="checkbox" name="removepunc"> Remove Punctuations </br>
+    <input type="checkbox" name="fullcaps"> Change into Uppercase </br>
+    <input type="checkbox" name="newlineremover"> remove new line </br>
+    <input type="checkbox" name="exspaceremover"> remove extra space </br>
+    <button type='submit'>Analyze Text</button>
+</form>
+</body>
+</html>
